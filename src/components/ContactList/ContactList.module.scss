@@ -1,0 +1,14 @@
+.item {
+  margin-bottom: 10px;
+
+
+}
+
+.itemThumb {
+  display: flex;
+    align-items: center;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+}

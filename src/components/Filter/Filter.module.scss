@@ -1,0 +1,18 @@
+.thumb {
+  display: flex;
+  flex-direction: column;
+
+  width: 500px;
+  padding: 20px;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.field {
+  padding: 10px 5px;
+
+  border: 1px solid #000;
+    border-radius: 5px;
+}

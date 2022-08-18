@@ -1,0 +1,51 @@
+.button {
+  width: 145px;
+  height: 40px;
+
+  margin-right: 10px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+  text-transform: uppercase;
+
+  color: #fff;
+  background-color: #4c00fe;
+
+  border: none;
+  border-radius: 5px;
+  outline: none;
+
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+
+  &:hover,
+  :focus {
+    box-shadow: inset 145px 0 0 0 #54b3d6;
+  }
+}
+
+.removeBtn {
+  margin-left: 10px;
+
+  width: 70px;
+  height: 20px;
+
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #4c00fe;
+
+  border: none;
+  border-radius: 5px;
+  outline: none;
+
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+  cursor: pointer;
+
+  &:hover,
+  :focus {
+    box-shadow: inset 145px 0 0 0 #54b3d6;
+  }
+}

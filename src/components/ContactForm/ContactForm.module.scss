@@ -1,0 +1,29 @@
+.formGroup {
+  padding: 20px;
+  width: 500px;
+
+  display: grid;
+  // grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  // align-items: center;
+
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.thumb {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 10px;
+
+}
+
+.field {
+  padding: 10px 5px;
+
+  border: 1px solid #000;
+    border-radius: 5px;
+}
