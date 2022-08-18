@@ -56,16 +56,9 @@ class App extends Component {
 
     const normalizeFilterToLowerCase = filter.toLocaleLowerCase();
 
-    const filterItems = contacts.filter(({ name, number }) => {
-      const normalizeNameToLowerCase = name.toLocaleLowerCase();
-      const normalizeNumberToLowerCase = number.toLocaleLowerCase();
-
-      const result =
-        normalizeNameToLowerCase.includes(normalizeFilterToLowerCase) ||
-        normalizeNumberToLowerCase.includes(normalizeFilterToLowerCase);
-      return result;
-    });
-    return filterItems;
+    return contacts.filter(({ name }) =>
+      name.toLocaleLowerCase().includes(normalizeFilterToLowerCase)
+    );
   }
 
   render() {

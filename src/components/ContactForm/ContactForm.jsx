@@ -4,6 +4,7 @@ import stylesButton from '../PhonebookOptions/PhonebookOptions.module.scss';
 import { Component } from 'react';
 import PhonebookOptions from 'components/PhonebookOptions/PhonebookOptions';
 import { nanoid } from 'nanoid';
+import PropTypes from 'prop-types';
 
 class Form extends Component {
   static defaultProps = {
@@ -82,3 +83,7 @@ class Form extends Component {
 }
 
 export default Form;
+
+Form.propTypes = {
+  onSubmit: PropTypes.func,
+};
