@@ -13,6 +13,21 @@ class App extends Component {
     filter: '',
   };
 
+  componentDidMount() {
+    console.log(this.state);
+    const contacts = JSON.parse(localStorage.getItem('contacts'));
+    if (contacts?.length) {
+      this.setState({ contacts });
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const { contacts } = this.state;
+    if (prevState.contacts !== contacts) {
+      localStorage.setItem('contacts', JSON.stringify(contacts));
+    }
+  }
+
   addContact = data => {
     if (this.isDuplicate(data)) {
       return Notiflix.Notify.warning(`${data.name} is already in contacts`);
@@ -62,6 +77,8 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state);
+
     const { addContact, handleFilter } = this;
     const phonebook = this.getFilterItems();
     const removeContact = this.removeContact;
