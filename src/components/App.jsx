@@ -77,8 +77,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state);
-
     const { addContact, handleFilter } = this;
     const phonebook = this.getFilterItems();
     const removeContact = this.removeContact;
